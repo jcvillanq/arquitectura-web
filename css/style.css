@@ -128,7 +128,7 @@ img {
     align-items: flex-end;
   }
 }
-
+ 
 .header a {
   color: var(--blanco);
   font-size: 2rem;
@@ -151,3 +151,4 @@ img {
 .nav-bar a:hover {
   background-color: rgb(255 255 255 / 0.5);
 }
+/* min 5.56 clase 154 */
