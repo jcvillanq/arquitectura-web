@@ -1,7 +1,7 @@
 /* Custom properties  */
 :root {
   --blanco: #fff;
-  --negro: #1111;
+  --negro: #1111; 
   --gris: #343a40;
 
   --fuentePrincipal: "Raleway", sans-serif;
@@ -86,7 +86,7 @@ img {
 
 @media (min-width: 768px) {
   .header {
-    padding: 2rem 0;
+    padding: 0;
   }
 }
 .container-header {
@@ -122,11 +122,24 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .contacto {
     align-items: flex-end;
   }
+}
+.phone{
+  display: flex;
+}
+.phone::before{
+  content:'';
+  display: block;
+  width: 4rem;
+  background-image: url(../img/telefono.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }
  
 .header a {
@@ -137,6 +150,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-top: 1rem;
 }
 @media (min-width: 768px) {
   .nav-bar {
@@ -144,11 +159,39 @@ img {
   }
 }
 .nav-bar a {
-  padding: 1rem 2rem;
+ padding: 0.5rem;
   transition: all 300ms;
+  width: 100%;
+  text-align: center;
 
+}
+@media (min-width: 768px) {
+  .nav-bar a {
+    padding: 1rem 2rem;
+  }
 }
 .nav-bar a:hover {
   background-color: rgb(255 255 255 / 0.5);
+  color: black;
 }
-/* min 5.56 clase 154 */
+.slogan{
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .slogan{
+    text-align:right;
+  }
+}
+.slogan h1{
+  font-size: 3rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .slogan h1{
+    font-size:5rem;
+  }
+}
+.slogan p{
+  margin: 0;
+  line-height: 1;
+}
